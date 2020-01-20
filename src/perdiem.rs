@@ -59,10 +59,10 @@ impl Kind {
                     anything_else => return Err(anything_else),
                 },
                 (Germany, None) => match self {
-                    FullDay => 240,
-                    Daytrip | Arrival | Departure => 120,
-                    Breakfast => 48,
-                    Lunch | Dinner => 96,
+                    FullDay => 280,
+                    Daytrip | Arrival | Departure => 140,
+                    Breakfast => 56,
+                    Lunch | Dinner => 112,
                 },
             }) * 10)
         })();
